@@ -67,7 +67,7 @@
     <section class="oder_submit">
         <div class="container">
             <button class="button button-rounded button-flat-action fr mgtbr8" id="submitOrder">
-                下单
+                微信支付
             </button>
         </div>
     </section>
@@ -206,17 +206,17 @@
                 iG.items={
             "饮品":[{id:"1",name:"拿铁",cls:"饮品",price:"15",sels:"45",imageUrl:"images/1.jpg"},
 					{id:"2",name:"摩卡",cls:"饮品",price:"23",sels:"75",imageUrl:"images/2.jpg"},
-					{id:"3",name:"牛肉",cls:"饮品",price:"45",sels:"36",imageUrl:"images/3.jpg"},
-					{id:"4",name:"牛肉和牛肚",cls:"饮品",price:"85",sels:"26",imageUrl:"images/4.jpg"},
-					{id:"5",name:"排骨",cls:"饮品",price:"63",sels:"12",imageUrl:"images/5.jpg"},
-					{id:"6",name:"猪脚",cls:"饮品",price:"56",sels:"32",imageUrl:"images/6.jpg"}
+					{id:"3",name:"冰摩卡",cls:"饮品",price:"45",sels:"36",imageUrl:"images/3.jpg"},
+					{id:"4",name:"冰拿铁",cls:"饮品",price:"85",sels:"26",imageUrl:"images/4.jpg"},
+					{id:"5",name:"咖啡星冰乐",cls:"饮品",price:"63",sels:"12",imageUrl:"images/5.jpg"},
+					{id:"6",name:"芒果茶星冰乐",cls:"饮品",price:"56",sels:"32",imageUrl:"images/6.jpg"}
                     ],
-			"水产":[{id:"7",name:"罗非鱼",cls:"水产",price:"45",sels:"12",imageUrl:"images/7.jpg"},
-					{id:"8",name:"杭州虾",cls:"水产",price:"153",sels:"8",imageUrl:"images/8.jpg"},
-					{id:"9",name:"海鲜套餐",cls:"水产",price:"255",sels:"30",imageUrl:"images/9.jpg"},
-					{id:"10",name:"贝壳",cls:"水产",price:"188",sels:"8",imageUrl:"images/10.jpg"},
-					{id:"11",name:"青鱼",cls:"水产",price:"156",sels:"8",imageUrl:"images/11.jpg"},
-					{id:"12",name:"黄鱼",cls:"水产",price:"120",sels:"8",imageUrl:"images/12.jpg"}
+			"日用":[{id:"7",name:"3M口罩-p2.5",cls:"日用",price:"45",sels:"12",imageUrl:"images/7.jpg"},
+					{id:"8",name:"3M口罩-防尘",cls:"日用",price:"153",sels:"8",imageUrl:"images/8.jpg"},
+					{id:"9",name:"3M口罩-1",cls:"日用",price:"255",sels:"30",imageUrl:"images/9.jpg"},
+					{id:"10",name:"3M口罩-2",cls:"日用",price:"188",sels:"8",imageUrl:"images/10.jpg"},
+					{id:"11",name:"3M口罩-3",cls:"日用",price:"156",sels:"8",imageUrl:"images/11.jpg"},
+					{id:"12",name:"3M口罩-4",cls:"日用",price:"120",sels:"8",imageUrl:"images/12.jpg"}
                     ],
 			"蔬菜":[{id:"13",name:"飘菜",cls:"蔬菜",price:"152",sels:"524",imageUrl:"images/13.jpg"},
 					{id:"14",name:"苦瓜",cls:"蔬菜",price:"154",sels:"524",imageUrl:"images/14.jpg"},
@@ -462,7 +462,7 @@
 			return result;
 		}
 		function buildOrder(_list){
-			var result = "<div class=\"row\" id=\"J_order_Manager\"><div class=\"col-xs-12 clearfix board_content\"><div class=\"col-xs-4 title_contain\"><p class=\"menu_title \">购物筐</p></div><div class=\"col-xs-2\"></div><div class=\"col-xs-3 title_contain\"><button class=\"button button-rounded button-flat-action\" id=\"addOrder\">再买</button></div><div class=\"col-xs-3 title_contain\"><button id=\"clearOder\"class=\"button button-rounded button-flat\">清空</button></div></div></div>";
+			var result = "<div class=\"row\" id=\"J_order_Manager\"><div class=\"col-xs-12 clearfix board_content\"><div class=\"col-xs-4 title_contain\"><p class=\"menu_title \">购物筐</p></div><div class=\"col-xs-2\"></div><div class=\"col-xs-3 title_contain\"><button class=\"button button-rounded button-flat-action\" id=\"addOrder\">购买</button></div><div class=\"col-xs-3 title_contain\"><button id=\"clearOder\"class=\"button button-rounded button-flat\">清空</button></div></div></div>";
 			var check = true;
 			
 			for(var i in _list){
@@ -473,7 +473,7 @@
 				
 			}
 			if(check){
-				result += "<div class=\"row gray_line\"><div class=\"col-md-12 clearfix board_content\"><p style=\"text-align: center;\"><span>亲，还没选到心仪的菜喔，点加菜开始选菜吧！</span></p></div></div>";
+				result += "<div class=\"row gray_line\"><div class=\"col-md-12 clearfix board_content\"><p style=\"text-align: center;\"><span>亲，还没为你的小伙伴选到心仪的礼物吧，点购买开始选购吧！</span></p></div></div>";
 			}
 			return result;
 		}
