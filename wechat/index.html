@@ -33,7 +33,7 @@
     </div>
     <footer class="footFix footLeft">
         <button id="myOrder" class="btn_change">
-            菜篮子
+            购物筐
             <!--span class="num">9</span-->
         </button>
     </footer>
@@ -204,12 +204,12 @@
 			
             setTimeout(function () {
                 iG.items={
-            "肉品":[{id:"1",name:"纯瘦肉",cls:"肉品",price:"15",sels:"45",imageUrl:"images/1.jpg"},
-					{id:"2",name:"猪耳朵",cls:"肉品",price:"23",sels:"75",imageUrl:"images/2.jpg"},
-					{id:"3",name:"牛肉",cls:"肉品",price:"45",sels:"36",imageUrl:"images/3.jpg"},
-					{id:"4",name:"牛肉和牛肚",cls:"肉品",price:"85",sels:"26",imageUrl:"images/4.jpg"},
-					{id:"5",name:"排骨",cls:"肉品",price:"63",sels:"12",imageUrl:"images/5.jpg"},
-					{id:"6",name:"猪脚",cls:"肉品",price:"56",sels:"32",imageUrl:"images/6.jpg"}
+            "饮品":[{id:"1",name:"拿铁",cls:"饮品",price:"15",sels:"45",imageUrl:"images/1.jpg"},
+					{id:"2",name:"摩卡",cls:"饮品",price:"23",sels:"75",imageUrl:"images/2.jpg"},
+					{id:"3",name:"牛肉",cls:"饮品",price:"45",sels:"36",imageUrl:"images/3.jpg"},
+					{id:"4",name:"牛肉和牛肚",cls:"饮品",price:"85",sels:"26",imageUrl:"images/4.jpg"},
+					{id:"5",name:"排骨",cls:"饮品",price:"63",sels:"12",imageUrl:"images/5.jpg"},
+					{id:"6",name:"猪脚",cls:"饮品",price:"56",sels:"32",imageUrl:"images/6.jpg"}
                     ],
 			"水产":[{id:"7",name:"罗非鱼",cls:"水产",price:"45",sels:"12",imageUrl:"images/7.jpg"},
 					{id:"8",name:"杭州虾",cls:"水产",price:"153",sels:"8",imageUrl:"images/8.jpg"},
@@ -462,7 +462,7 @@
 			return result;
 		}
 		function buildOrder(_list){
-			var result = "<div class=\"row\" id=\"J_order_Manager\"><div class=\"col-xs-12 clearfix board_content\"><div class=\"col-xs-4 title_contain\"><p class=\"menu_title \">菜篮子</p></div><div class=\"col-xs-2\"></div><div class=\"col-xs-3 title_contain\"><button class=\"button button-rounded button-flat-action\" id=\"addOrder\">选菜</button></div><div class=\"col-xs-3 title_contain\"><button id=\"clearOder\"class=\"button button-rounded button-flat\">清空</button></div></div></div>";
+			var result = "<div class=\"row\" id=\"J_order_Manager\"><div class=\"col-xs-12 clearfix board_content\"><div class=\"col-xs-4 title_contain\"><p class=\"menu_title \">购物筐</p></div><div class=\"col-xs-2\"></div><div class=\"col-xs-3 title_contain\"><button class=\"button button-rounded button-flat-action\" id=\"addOrder\">再买</button></div><div class=\"col-xs-3 title_contain\"><button id=\"clearOder\"class=\"button button-rounded button-flat\">清空</button></div></div></div>";
 			var check = true;
 			
 			for(var i in _list){
